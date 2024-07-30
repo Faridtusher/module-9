@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      .flex-style{
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+      }
+
+      img{
+         border-radius: 5px;
+      }
+
+      .container2{
+         display: flex;
+         gap: 5px;
+         flex-wrap: wrap;
+         justify-content: space-between;
+      }
+
+      .item{
+         width: 200px;
+         height: 100px;
+         background-color: aquamarine;
+         border: 1px solid gray;
+         border-radius: 5px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+
+
+
+
+
+      @media screen and (max-width: 800px){
+         .flex-style{
+            flex-direction: column;
+
+         }
+      }
+   </style>
+</head>
+
+<body>
+   <!-- discuss two type of flex -->
+    <!-- 1. Two parts of flex -->
+    <div class="flex-style">
+      <div>
+         <h1>This is the heading tag</h1>
+         <p>The name of my country is bangladesh</p>
+         <img width="300px" src="./images/react.png" alt="">
+      </div>
+
+      <div>
+         <h1>This is the heading tag</h1>
+         <p>The name of my country is bangladesh</p>
+         <img width="300px" src="./images/react.png" alt="">
+      </div>
+    </div>
+
+    <!-- 2.  -->
+     <div class="container2">
+      <div class="item">item-1</div>
+      <div class="item">item-2</div>
+      <div class="item">item-3</div>
+      <div class="item">item-4</div>
+      <div class="item">item-5</div>
+      <div class="item">item-6</div>
+      <div class="item">item-7</div>
+      <div class="item">item-8</div>
+      <div class="item">item-9</div>
+      <div class="item">item-10</div>
+
+     </div>
+    
+   
+</body>
+</html>
